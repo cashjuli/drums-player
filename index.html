@@ -3,60 +3,93 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>JS Drum Kit</title>
+    <title>JS Drum Kit styled by Juli Cash</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <!--Installed BootStrap-->
+    <script
+      src="https://kit.fontawesome.com/8c9bb54195.js"
+      crossorigin="anonymous"
+    ></script>
+    <!--Installed FontAwesome-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Quantico&display=swap"
+      rel="stylesheet"
+    />
+    <!--Installed GoogleFonts-->
   </head>
 
   <body>
-    <div class="keys">
-      <!--DOM shows an Object each time the user selects a key. Each key has an attribute called keyCode, that matchs the "data-key" attributes that are written below-->
-      <div data-key="65" class="key">
-        <kbd>A</kbd>
-        <span class="sound">clap</span>
+    <div class="container drumsplayer">
+      <div class="vintageshadow">
+        <div class="mycard">
+          <div class="falsetab d-flex justify-content-end">
+            <i class="fas fa-times falseclose"></i>
+          </div>
+          <div class="instructions">
+            <p>Use your keyboard to play the drums!</p>
+          </div>
+          <div class="row keys">
+            <!--DOM shows an Object each time the user selects a key. Each key has an attribute called keyCode, that matchs the "data-key" attributes that are written below-->
+            <div data-key="65" class="key">
+              <span class="sound">A</span>
+            </div>
+            <div data-key="83" class="key">
+              <span class="sound">s</span>
+            </div>
+            <div data-key="68" class="key">
+              <span class="sound">d</span>
+            </div>
+            <div data-key="70" class="key">
+              <span class="sound">f</span>
+            </div>
+            <div data-key="71" class="key">
+              <span class="sound">g</span>
+            </div>
+            <div data-key="72" class="key">
+              <span class="sound">h</span>
+            </div>
+            <div data-key="74" class="key">
+              <span class="sound">J</span>
+            </div>
+            <div data-key="75" class="key">
+              <span class="sound">k</span>
+            </div>
+            <div data-key="76" class="key">
+              <span class="sound">l</span>
+            </div>
+          </div>
+        </div>
       </div>
-      <div data-key="83" class="key">
-        <kbd>S</kbd>
-        <span class="sound">hihat</span>
-      </div>
-      <div data-key="68" class="key">
-        <kbd>D</kbd>
-        <span class="sound">kick</span>
-      </div>
-      <div data-key="70" class="key">
-        <kbd>F</kbd>
-        <span class="sound">openhat</span>
-      </div>
-      <div data-key="71" class="key">
-        <kbd>G</kbd>
-        <span class="sound">boom</span>
-      </div>
-      <div data-key="72" class="key">
-        <kbd>H</kbd>
-        <span class="sound">ride</span>
-      </div>
-      <div data-key="74" class="key">
-        <kbd>J</kbd>
-        <span class="sound">snare</span>
-      </div>
-      <div data-key="75" class="key">
-        <kbd>K</kbd>
-        <span class="sound">tom</span>
-      </div>
-      <div data-key="76" class="key">
-        <kbd>L</kbd>
-        <span class="sound">tink</span>
-      </div>
-    </div>
 
-    <audio data-key="65" src="sounds/clap.wav"></audio>
-    <audio data-key="83" src="sounds/hihat.wav"></audio>
-    <audio data-key="68" src="sounds/kick.wav"></audio>
-    <audio data-key="70" src="sounds/openhat.wav"></audio>
-    <audio data-key="71" src="sounds/boom.wav"></audio>
-    <audio data-key="72" src="sounds/ride.wav"></audio>
-    <audio data-key="74" src="sounds/snare.wav"></audio>
-    <audio data-key="75" src="sounds/tom.wav"></audio>
-    <audio data-key="76" src="sounds/tink.wav"></audio>
+      <audio data-key="65" src="sounds/clap.wav"></audio>
+      <audio data-key="83" src="sounds/hihat.wav"></audio>
+      <audio data-key="68" src="sounds/kick.wav"></audio>
+      <audio data-key="70" src="sounds/openhat.wav"></audio>
+      <audio data-key="71" src="sounds/boom.wav"></audio>
+      <audio data-key="72" src="sounds/ride.wav"></audio>
+      <audio data-key="74" src="sounds/snare.wav"></audio>
+      <audio data-key="75" src="sounds/tom.wav"></audio>
+      <audio data-key="76" src="sounds/tink.wav"></audio>
+
+      <footer>
+        Open source
+        <a
+          href="https://github.com/cashjuli/WeatherApp-by-Juli-Cash-for-SheCodes"
+          target="”_blank”"
+          >code</a
+        >
+        by
+        <a href="https://www.linkedin.com/in/julieta-cash" target="”_blank”"
+          >Juli Cash <i class="fab fa-linkedin"></i
+        ></a>
+      </footer>
+    </div>
 
     <script src="script.js"></script>
   </body>

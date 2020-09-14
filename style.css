@@ -1,52 +1,77 @@
-html {
-  font-size: 10px;
-  background: url("DSCF0032.JPG") center top;
-  background-size: 75%;
+.drumsplayer {
+  padding: 0;
+  text-align: center;
 }
 
-body,
-html {
-  margin: 0;
+.vintageshadow {
+  width: fit-content;
+  display: flex;
+  background-image: url(media/123.jpg);
+  background-repeat: repeat;
+  padding-right: 2%;
+  padding-bottom: 2%;
+  margin: 5% auto;
+}
+
+.mycard {
+  font-family: "Press Start 2P", sans-serif;
+
+  font-size: 1rem;
   padding: 0;
-  font-family: sans-serif;
+  background-color: #d3f6f3;
+  width: fit-content;
+  border: 1px solid #251f44;
+  margin-left: -2%;
+  margin-top: -2%;
+}
+.falsetab {
+  background-color: #fee9b2;
+  border-bottom: 1px solid #251f44;
+}
+.falseclose {
+  background-color: #fbd1b7;
+  border-left: 1px solid #251f44;
+  padding: 0 3px;
+}
+
+.instructions {
+  margin: 1rem;
+  margin-bottom: 0;
 }
 
 .keys {
-  display: flex;
-  flex: 1;
-  min-height: 100vh;
-  align-items: center;
   justify-content: center;
+  font-weight: 200;
+  padding: 1rem;
 }
 
 .key {
-  border: 0.4rem solid green;
-  border-radius: 0.5rem;
-  margin: 1rem;
-  font-size: 1.5rem;
-  padding: 1rem 0.5rem;
-  transition: all 0.07s ease;
-  width: 10rem;
-  text-align: center;
+  background-color: #f9fce1;
+  border: 2px solid #251f44;
+  border-top: 3px solid white;
+  border-left: 3px solid white;
   color: #fff;
-  background: rgba(11, 54, 20, 0.4);
-  text-shadow: 0 0 0.5rem green;
+  margin: 1rem;
+  padding: 3px;
+  text-align: center;
+  transition: all 0.07s ease;
+  width: 2.5rem;
 }
 
 .playing {
   transform: scale(1.1);
-  border-color: #ffc600;
-  box-shadow: 0 0 1rem #ffc600;
-}
-
-kbd {
-  display: block;
-  font-size: 4rem;
+  background-color: #fbd1b7;
+  border-top: 3px solid #fee9b2;
+  border-left: 3px solid #fee9b2;
 }
 
 .sound {
-  font-size: 1.2rem;
   text-transform: uppercase;
   letter-spacing: 0.1rem;
-  color: #ffc600;
+  color: #251f44;
+}
+
+footer {
+  font-family: monospace;
+  margin-left: -5%;
 }

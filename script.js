@@ -53,3 +53,17 @@ function setDate() {
 }
 
 setInterval(setDate, 1000); //calls the function each second (every 1000 miliseconds)
+
+//Exercise 3 Update variables with JS
+const inputs = document.querySelectorAll(".controls input");
+
+function handleUpdate() {
+  const suffix = this.dataset.sizing || ""; // Blur and spacing need suffix "px", but the color doesnt need any. Since the color class doesnt have a "data-sizing", it needs the || "" to prevent a bug.
+  document.documentElement.style.setProperty(
+    `--${this.name}`,
+    this.value + suffix
+  ); //adds the CSS attribute, first name, then value, and the suffix (px or nothing for the color.)
+}
+
+inputs.forEach((input) => input.addEventListener("change", handleUpdate)); //calls update function everytime there is a click change
+inputs.forEach((input) => input.addEventListener("mousemove", handleUpdate)); // calls function everytime the user moves the imput, while clicking because of the line before.

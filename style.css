@@ -141,6 +141,32 @@
   height: 3px;
   transition: all 0.5s cubic-bezier(0.82, 0.29, 0, 1.7);
 }
+
+/*Ex 3 css*/
+:root {
+  --base: #ffc600;
+  --spacing: 10px;
+  --blur: 10px;
+}
+
+img {
+  padding: var(--spacing);
+  background: var(--base);
+  filter: blur(var(--blur));
+}
+
+.hl {
+  color: var(--base);
+}
+
+.controls {
+  margin-bottom: 50px;
+}
+
+input {
+  width: 100px;
+}
+
 /*footer*/
 footer {
   font-family: monospace;

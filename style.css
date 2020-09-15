@@ -96,25 +96,25 @@
 .twelve {
   position: relative;
   left: 0;
-  top: -8%;
+  top: -6%;
 }
 
 .three {
   position: relative;
   left: 50%;
-  top: 30%;
+  top: 40%;
 }
 
 .six {
   position: relative;
   left: 0;
-  top: 60%;
+  top: 80%;
 }
 
 .nine {
   position: relative;
   left: -50%;
-  top: 0%;
+  top: 20%;
 }
 
 .hand {
@@ -143,8 +143,9 @@
 }
 
 /*Ex 3 css*/
+
 :root {
-  --base: #ffc600;
+  --base: #fbd1b7;
   --spacing: 10px;
   --blur: 10px;
 }
@@ -153,6 +154,8 @@ img {
   padding: var(--spacing);
   background: var(--base);
   filter: blur(var(--blur));
+  width: 50%;
+  margin-bottom: 30px;
 }
 
 .hl {
@@ -176,7 +179,9 @@ footer {
 
 h3 {
   font-family: "Press Start 2P", sans-serif;
-  font-size: 5px;
-  margin-top: 15px;
+  text-align: center;
+}
+h4 {
+  font-family: "Press Start 2P", sans-serif;
   text-align: center;
 }

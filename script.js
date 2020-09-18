@@ -67,3 +67,21 @@ function handleUpdate() {
 
 inputs.forEach((input) => input.addEventListener("change", handleUpdate)); //calls update function everytime there is a click change
 inputs.forEach((input) => input.addEventListener("mousemove", handleUpdate)); // calls function everytime the user moves the imput, while clicking because of the line before.
+
+// Exercise 5 -----------------------------------------------------------
+const panels = document.querySelectorAll(".panel");
+
+function toggleOpen() {
+  this.classList.toggle("open");
+}
+
+function toggleActive(event) {
+  if (event.propertyName.includes("flex")) {
+    this.classList.toggle("open-active");
+  }
+}
+
+panels.forEach((panel) => panel.addEventListener("click", toggleOpen));
+panels.forEach((panel) =>
+  panel.addEventListener("transitionend", toggleActive)
+);
